@@ -4,3 +4,4 @@
 # txt that will contains all even numbers extracted from the numbers.txt. The second text file will be named odd.txt that will contains all odd numbers extracted from the numbers.txt.
 
 with open("numbers.txt", "r") as sample_file:
+    numbers = [int(line.strip()) for line in sample_file]
