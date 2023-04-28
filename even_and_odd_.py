@@ -8,3 +8,7 @@ with open("numbers.txt", "r") as sample_file:
 
 even_numbers = [num for num in numbers if num % 2 == 0]
 odd_numbers = [num for num in numbers if num % 2 != 0]
+
+with open("even.txt", "w") as even_txt:
+    for num in even_numbers:
+        even_txt.write(str(num) + "\n")
