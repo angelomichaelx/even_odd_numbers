@@ -5,3 +5,6 @@
 
 with open("numbers.txt", "r") as sample_file:
     numbers = [int(line.strip()) for line in sample_file]
+
+even_numbers = [num for num in numbers if num % 2 == 0]
+odd_numbers = [num for num in numbers if num % 2 != 0]
