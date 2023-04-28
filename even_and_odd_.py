@@ -12,3 +12,7 @@ odd_numbers = [num for num in numbers if num % 2 != 0]
 with open("even.txt", "w") as even_txt:
     for num in even_numbers:
         even_txt.write(str(num) + "\n")
+
+with open("odd.txt", "w") as odd_txt:
+    for num in odd_numbers:
+        odd_txt.write(str(num) + "\n")
